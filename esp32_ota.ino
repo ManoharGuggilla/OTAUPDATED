@@ -11,8 +11,9 @@ const char * password = "12345678";
 String FirmwareVer = {
   "2.1"
 };
-#define URL_fw_Version "https://github.com/ManoharGuggilla/OTAUPDATED/blob/main/bin_version.txt"
-#define URL_fw_Bin "https://github.com/ManoharGuggilla/OTAUPDATED/blob/main/fw.bin"
+
+#define URL_fw_Version "https://raw.githubusercontent.com/ManoharGuggilla/OTAUPDATED/main/bin_version.txt"
+#define URL_fw_Bin "https://raw.githubusercontent.com/ManoharGuggilla/OTAUPDATED/main/fw.bin"
 
 //#define URL_fw_Version "http://cade-make.000webhostapp.com/version.txt"
 //#define URL_fw_Bin "http://cade-make.000webhostapp.com/firmware.bin"
@@ -91,7 +92,6 @@ void loop() {
     button_boot.pressed = false;
   }
   repeatedCall();
-  Serial.print("HI:CODE UPDATED");
 }
 
 void connect_wifi() {
